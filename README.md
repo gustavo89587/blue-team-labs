@@ -1,2 +1,116 @@
-# Blue Team Labs
-Linux, DNS, Auth logs.
+☁️ Cloud Security – GCP
+Logging | IAM | Security Monitoring | Detections
+
+Este repositório reúne scripts e exemplos práticos para análise de segurança no Google Cloud Platform (GCP), com foco em:
+
+Logging e auditoria
+
+IAM (Identity & Access Management)
+
+Detecções de configurações inseguras
+
+Melhoria da postura de segurança
+
+Automação com Python + Google SDKs
+
+Ideal para profissionais SOC, Cloud Security e Blue Team.
+
+🎯 Objetivos
+
+✔ Identificar riscos em configurações de IAM
+✔ Detectar buckets públicos indevidos
+✔ Analisar eventos críticos do Cloud Logging
+✔ Apoiar investigações de incidentes em GCP
+✔ Servir como portfólio profissional focado em Cloud Security
+
+📁 Estrutura do Repositório
+cloud-security-gcp/
+│
+├── logging/
+│   └── logging_analyzer.py
+│
+├── iam/
+│   └── iam_analyzer.py
+│
+├── detections/
+│   └── public_buckets.py
+│
+└── requirements.txt
+
+🔍 Conteúdo dos Módulos
+1. Logging Analyzer
+
+Script para coletar e analisar eventos de auditoria no GCP.
+
+Inclui:
+
+Acesso a logs via google-cloud-logging
+
+Filtragem por eventos de interesse (IAM, rede, storage, compute)
+
+Priorização de eventos suspeitos
+
+✔ Apoia investigações de incidentes
+✔ Pode ser integrado a um SIEM (Splunk, QRadar, Chronicle)
+
+2. IAM Analyzer
+
+Análise de políticas IAM com foco em:
+
+Permissões amplas
+
+Service accounts com privilégios desnecessários
+
+Riscos de privilege escalation
+
+Acesso público inadvertido
+
+✔ Detecta problemas de least privilege
+✔ Ajuda a reforçar postura Zero Trust
+
+3. Public Buckets Detection
+
+Detecção de buckets que estejam expostos para:
+
+allUsers
+
+allAuthenticatedUsers
+
+Inclui:
+
+Listagem de buckets
+
+Checagem de ACLs e policies
+
+Alerta para buckets públicos
+
+✔ Mitiga risco comum de exposição de dados
+
+▶️ Como Executar
+pip install -r requirements.txt
+python logging/logging_analyzer.py
+python iam/iam_analyzer.py
+python detections/public_buckets.py
+
+🛡️ Skills Demonstradas com Este Repositório
+
+Cloud Security (GCP)
+
+Logging / Cloud Audit
+
+IAM Analysis
+
+Detection Engineering
+
+Python Automation
+
+Postura de Segurança
+
+📬 Contato
+
+Gustavo Okamoto
+Cybersecurity Analyst – SOC | Cloud Security
+📧 gugaokamoto1@gmail.com
+
+🔗 linkedin.com/in/gustavo-okamoto-de-carvalho-ti
+🔗 github.com/gustavo89587
